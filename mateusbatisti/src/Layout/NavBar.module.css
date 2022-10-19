@@ -1,0 +1,30 @@
+.list{
+    
+    list-style: none;
+
+}
+
+.item{
+    display: inline-block;
+    margin-right: 1em;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 1px -1px 5px rgba(1, 1, 1,.9);;
+    width: 95% ;
+    margin: 5px 2px 2px 2px;
+    padding: 3px;
+}
+.item:hover{
+    margin-right: 1em;
+    background-color: rgb(124, 100, 100);
+    border-radius: 5px;
+    box-shadow: 1px -1px 5px rgba(1, 1, 1,.9);;
+    width: 95% ;
+    margin: 5px 2px 2px 2px;
+    padding: 3px;
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}

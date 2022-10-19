@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            function teste(){
+            
+            var axios = require('axios');
+            var FormData = require('form-data');
+            var fs = require('fs');
+            var data = new FormData();
+            data.append('medias', fs.createReadStream('/D:/#souchat/ESQUENTAR-O-CHIP.pdf'));
+            data.append('body', 'teste enviado via api');
+            data.append('whatsappId', '1');
+            data.append('number', '5551996495083');
+
+            var config = {
+            method: 'post',
+            url: 'http://192.168.1.249:8080/api/messages/send',
+            headers: { 
+                'Authorization': 'Bearer e5d88584-7042-421e-8285-70d5f3266869', 
+                'Content-Type': 'multipart/form-data', 
+                ...data.getHeaders()
+            },
+            data : data
+            };
+
+            axios(config)
+            .then(function (response) {
+            console.log(JSON.stringify(response.data));
+            })
+            .catch(function (error) {
+            console.log(error);
+            });}
+        </script>
+    </head>
+    <body>
+        <button onclick="axios();">teste</bbutton>
+    </body>
+
+
+
+
+</html>

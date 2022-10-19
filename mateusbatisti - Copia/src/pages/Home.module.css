@@ -1,0 +1,27 @@
+.container{
+    display:inline-flex;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    align-content: flex-start;
+    align-items: initial;
+    justify-content: center;
+
+}
+.menu{
+    display: flow-root;
+    width: 20%;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 0px;
+    background-color: blueviolet;
+      
+}
+.conteudo{
+    display: flow-root;
+    width: 80%;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 5px;    
+}

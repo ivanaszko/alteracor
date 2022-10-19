@@ -1,0 +1,55 @@
+.container{
+    display:flex;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    align-content: flex-start;
+    align-items: initial;
+    justify-content: center;
+
+}
+.menu{
+    display:flex;
+    width: 15%;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(82, 80, 83);
+    visibility: visible;
+    justify-content: center;
+      
+}
+.conteudo{
+    display: flex;
+    width: 90%;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 5px;
+    justify-content: center;
+    background-image: linear-gradient(#fff,#111);
+    z-index: 100;
+    backdrop-filter: blur(2px);
+    background-image: url('../img/background.jpg');
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    
+
+    
+}
+.conteudoFundo{
+    display: flex;
+    width: 80%;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 5px;
+    justify-content: center;
+    background-image: linear-gradient(#fff,#111);
+    background-image: url('../img/background.jpg');
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    z-index: 101;
+}
